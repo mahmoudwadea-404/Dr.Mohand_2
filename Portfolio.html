@@ -74,41 +74,66 @@
 <body class="bg-dental-dark text-white body-sans selection:bg-dental-gold selection:text-black transition-all duration-1000 opacity-100 translate-y-0">
 <!-- BEGIN: MainHeader -->
 <header class="fixed top-0 left-0 w-full z-50 bg-dental-dark/80 backdrop-blur-md border-b border-white/5" dir="ltr">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between gap-4">
 <!-- Logo Section -->
-<a href="index.html" class="flex items-center gap-4" data-purpose="site-logo">
+<a href="index.html" class="flex items-center gap-2.5 md:gap-4" data-purpose="site-logo">
   <div class="w-8 h-8 rounded-full border-2 border-dental-gold flex items-center justify-center flex-shrink-0">
     <div class="w-4 h-4 bg-dental-gold rounded-full"></div>
   </div>
-  <span class="heading-serif text-xl font-bold tracking-widest uppercase text-white">DR. MOHAND HELAIL</span>
+  <span class="heading-serif text-sm sm:text-base lg:text-xl font-bold tracking-wider lg:tracking-widest uppercase text-white whitespace-nowrap">DR. MOHAND HELAIL</span>
 </a>
 
-<!-- Centered Navigation -->
-<nav class="hidden md:flex items-center gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-6 lg:gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="index.html">HOME</a>
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Services.html">SERVICES</a>
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="About.html">ABOUT</a>
   <a class="text-dental-gold border-b-2 border-dental-gold pb-1" href="Portfolio.html">PORTFOLIO</a>
 </nav>
 
-<!-- CTA Button Section -->
-<div data-purpose="header-action">
-  <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
+<!-- Desktop CTA Button -->
+<div class="hidden md:block" data-purpose="header-action">
+  <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-6 lg:px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
     BOOK CONSULTATION
   </a>
 </div>
+
+<!-- Mobile Menu Toggle -->
+<button id="mobile-menu-toggle" type="button" class="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-white/10 text-white hover:border-dental-gold hover:text-dental-gold transition-colors" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+  <svg class="menu-icon menu-icon-open w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+  <svg class="menu-icon menu-icon-close hidden w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
 </div>
+
+<!-- Mobile Navigation -->
+<nav id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-dental-dark/95 backdrop-blur-md border-b border-white/5 shadow-2xl px-4 py-4 flex flex-col" data-purpose="mobile-nav">
+  <a href="index.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    HOME
+  </a>
+  <a href="Services.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    SERVICES
+  </a>
+  <a href="About.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    ABOUT
+  </a>
+  <a href="Portfolio.html" class="flex items-center py-4 px-3 rounded-lg text-dental-gold text-sm font-bold uppercase tracking-widest heading-serif border-b border-white/10">
+    PORTFOLIO
+  </a>
+  <a href="index.html#booking-section" class="mt-3 bg-dental-gold hover:bg-dental-gold-light text-black text-center font-bold px-6 py-4 rounded-full text-xs uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20">
+    BOOK CONSULTATION
+  </a>
+</nav>
 </header>
 <main class="pt-32">
 <!-- Hero Section -->
-<section class="px-margin-desktop py-16 text-center relative overflow-hidden">
+<section class="px-6 md:px-margin-desktop py-12 md:py-16 text-center relative overflow-hidden">
 <div class="relative z-10 max-w-4xl mx-auto">
-<h1 class="heading-serif text-6xl lg:text-7xl font-bold text-dental-gold mb-6 tracking-tight">Portfolio</h1>
+<h1 class="heading-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dental-gold mb-6 tracking-tight">Portfolio</h1>
 <p class="body-sans text-dental-text-gray text-sm max-w-2xl mx-auto uppercase tracking-[0.2em] leading-relaxed">استعراض لأبرز الحالات والنتائج التجميلية والعلاجية</p>
 </div>
 </section>
 <!-- Portfolio Grid -->
-<section class="px-margin-desktop py-12 max-w-7xl mx-auto">
+<section class="px-6 md:px-margin-desktop py-12 max-w-7xl mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-24" dir="rtl">
 <!-- Card 1 -->
 <div class="group flex flex-col gap-6 transition-all duration-1000 opacity-100 translate-y-0">
@@ -119,7 +144,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الابتسامة بالكامل</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الابتسامة بالكامل</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم تعويض الأسنان المفقودة وإعادة تأهيل الأسنان المتضررة من خلال خطة علاجية متكاملة، لاستعادة الابتسامة الطبيعية وتحسين وظيفة المضغ والثقة بالنفس.</p>
 </div>
 </div>
@@ -132,7 +157,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الفك العلوي</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الفك العلوي</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم استبدال الأسنان المفقودة والمتضررة بتركيبات ثابتة مصممة بدقة، مما أعاد للمريض القدرة على المضغ مع الحصول على مظهر طبيعي ومتناسق.</p>
 </div>
 </div>
@@ -145,7 +170,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميم تجميلي للأسنان الخلفية</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميم تجميلي للأسنان الخلفية</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم ترميم السن باستخدام حشوة تجميلية عالية الجودة بعد إزالة الجزء المتضرر، مع الحفاظ على أكبر قدر ممكن من نسيج السن الطبيعي.</p>
 </div>
 </div>
@@ -158,7 +183,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">تجميل الأسنان الأمامية</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">تجميل الأسنان الأمامية</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1048" data-end="1158" class="PDq2pG_selectionAnchorContainer">تحسين لون وشكل الأسنان الأمامية للحصول على ابتسامة أكثر إشراقًا وتناسقًا مع الحفاظ على المظهر الطبيعي للأسنان.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
 <p data-start="1160" data-end="1176"></p></p>
 </div>
@@ -172,7 +197,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة بناء الأسنان الأمامية</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة بناء الأسنان الأمامية</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1294" data-end="1424" class="PDq2pG_selectionAnchorContainer">إعادة ترميم الأسنان الأمامية المتآكلة أو المكسورة باستخدام مواد تجميلية متقدمة، لاستعادة الشكل الطبيعي والانسجام الكامل للابتسامة.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
 <p data-start="1426" data-end="1442"></p></p>
 </div>
@@ -186,7 +211,7 @@
 </div>
 </div>
 <div class="flex flex-col gap-3">
-<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميمات تجميلية متقدمة</h3>
+<h3 class="heading-serif text-xl md:text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميمات تجميلية متقدمة</h3>
 <p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1556" data-end="1684" class="PDq2pG_selectionAnchorContainer">مجموعة من الحالات التي توضح نتائج ترميم الأسنان باستخدام أحدث المواد والتقنيات، مع التركيز على القوة، والمتانة، والمظهر الطبيعي.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
 <p data-start="1686" data-end="1702"></p></p>
 </div>
@@ -194,10 +219,10 @@
 </div>
 </section>
 <!-- Patient Experiences -->
-<section class="bg-dental-deep-blue py-section-gap px-margin-desktop mt-24">
+<section class="bg-dental-deep-blue py-16 md:py-section-gap px-6 md:px-margin-desktop mt-12 md:mt-24">
 <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
 <div class="lg:col-span-1">
-<h2 class="heading-serif text-4xl font-bold text-white mb-4">Patient Experiences</h2>
+<h2 class="heading-serif text-3xl sm:text-4xl font-bold text-white mb-4">Patient Experiences</h2>
 <p class="body-sans text-sm text-dental-text-gray leading-relaxed">آراء عملائنا وقصص نجاحهم مع عيادتنا</p>
 <div class="mt-8 flex gap-4">
 <button class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center text-dental-gold hover:bg-dental-gold hover:text-black transition-all">
@@ -209,17 +234,17 @@
 </div>
 </div>
 <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="p-6 md:p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
 <span class="material-symbols-outlined text-dental-gold text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span>
-<p class="body-sans text-lg text-white italic leading-relaxed" dir="rtl">"لقد غيرت هذه العيادة حياتي بالكامل. أصبحت الآن أبتسم بكل ثقة."</p>
+<p class="body-sans text-base md:text-lg text-white italic leading-relaxed" dir="rtl">"لقد غيرت هذه العيادة حياتي بالكامل. أصبحت الآن أبتسم بكل ثقة."</p>
 <div dir="rtl">
 <p class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">أحمد منصور</p>
 <p class="text-dental-text-gray text-xs mt-1">مريض تجميل أسنان</p>
 </div>
 </div>
-<div class="p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="p-6 md:p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
 <span class="material-symbols-outlined text-dental-gold text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span>
-<p class="body-sans text-lg text-white italic leading-relaxed" dir="rtl">"الاحترافية والدقة في العمل لا تضاهى. أنصح الجميع بزيارة د. مهند."</p>
+<p class="body-sans text-base md:text-lg text-white italic leading-relaxed" dir="rtl">"الاحترافية والدقة في العمل لا تضاهى. أنصح الجميع بزيارة د. مهند."</p>
 <div dir="rtl">
 <p class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">سارة خالد</p>
 <p class="text-dental-text-gray text-xs mt-1">مريضة زراعة أسنان</p>
@@ -229,9 +254,9 @@
 </div>
 </section>
 <!-- CTA Section -->
-<section class="px-margin-desktop py-section-gap relative overflow-hidden text-center bg-dental-dark transition-all duration-1000 opacity-100 translate-y-0">
+<section class="px-6 md:px-margin-desktop py-16 md:py-section-gap relative overflow-hidden text-center bg-dental-dark transition-all duration-1000 opacity-100 translate-y-0">
 <div class="relative z-10 max-w-3xl mx-auto">
-<h2 class="heading-serif text-5xl font-bold text-white mb-8">Ready for your transformation?</h2>
+<h2 class="heading-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-8">Ready for your transformation?</h2>
 <p class="body-sans text-sm text-dental-text-gray mb-12 leading-relaxed">اكتشف الفرق الذي يمكن أن تحدثه الخبرة واللمسة الفنية في ابتسامتك. ابدأ رحلتك الآن نحو تحول جذري يعيد لك الثقة والإشراق.</p>
 <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black font-bold px-12 py-4 rounded-full transition-all text-sm uppercase tracking-widest shadow-xl shadow-dental-gold/10 inline-block">
             Book Your Consultation
@@ -288,5 +313,23 @@
     });
 </script>
 
+
+<script>
+(function () {
+  var toggle = document.getElementById('mobile-menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (!toggle || !menu) return;
+  function setOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.querySelectorAll('.menu-icon-open').forEach(function (icon) { icon.classList.toggle('hidden', open); });
+    toggle.querySelectorAll('.menu-icon-close').forEach(function (icon) { icon.classList.toggle('hidden', !open); });
+    document.body.classList.toggle('overflow-hidden', open);
+  }
+  toggle.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+})();
+</script>
 
 </body></html>

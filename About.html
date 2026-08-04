@@ -50,30 +50,55 @@
 <body class="bg-dental-dark text-white body-sans selection:bg-dental-gold selection:text-black">
 <!-- BEGIN: MainHeader -->
 <header class="fixed top-0 left-0 w-full z-50 bg-dental-dark/80 backdrop-blur-md border-b border-white/5" dir="ltr">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between gap-4">
 <!-- Logo Section -->
-<a href="index.html" class="flex items-center gap-4" data-purpose="site-logo">
+<a href="index.html" class="flex items-center gap-2.5 md:gap-4" data-purpose="site-logo">
   <div class="w-8 h-8 rounded-full border-2 border-dental-gold flex items-center justify-center flex-shrink-0">
     <div class="w-4 h-4 bg-dental-gold rounded-full"></div>
   </div>
-  <span class="heading-serif text-xl font-bold tracking-widest uppercase text-white">DR. MOHAND HELAIL</span>
+  <span class="heading-serif text-sm sm:text-base lg:text-xl font-bold tracking-wider lg:tracking-widest uppercase text-white whitespace-nowrap">DR. MOHAND HELAIL</span>
 </a>
 
-<!-- Centered Navigation -->
-<nav class="hidden md:flex items-center gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
+<!-- Desktop Navigation -->
+<nav class="hidden md:flex items-center gap-6 lg:gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="index.html">HOME</a>
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Services.html">SERVICES</a>
   <a class="text-dental-gold border-b-2 border-dental-gold pb-1" href="About.html">ABOUT</a>
   <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Portfolio.html">PORTFOLIO</a>
 </nav>
 
-<!-- CTA Button Section -->
-<div data-purpose="header-action">
-  <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
+<!-- Desktop CTA Button -->
+<div class="hidden md:block" data-purpose="header-action">
+  <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-6 lg:px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
     BOOK CONSULTATION
   </a>
 </div>
+
+<!-- Mobile Menu Toggle -->
+<button id="mobile-menu-toggle" type="button" class="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-white/10 text-white hover:border-dental-gold hover:text-dental-gold transition-colors" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+  <svg class="menu-icon menu-icon-open w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+  <svg class="menu-icon menu-icon-close hidden w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
 </div>
+
+<!-- Mobile Navigation -->
+<nav id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-dental-dark/95 backdrop-blur-md border-b border-white/5 shadow-2xl px-4 py-4 flex flex-col" data-purpose="mobile-nav">
+  <a href="index.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    HOME
+  </a>
+  <a href="Services.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    SERVICES
+  </a>
+  <a href="About.html" class="flex items-center py-4 px-3 rounded-lg text-dental-gold text-sm font-bold uppercase tracking-widest heading-serif border-b border-white/10">
+    ABOUT
+  </a>
+  <a href="Portfolio.html" class="flex items-center py-4 px-3 rounded-lg text-white text-sm font-bold uppercase tracking-widest heading-serif hover:text-dental-gold transition-colors">
+    PORTFOLIO
+  </a>
+  <a href="index.html#booking-section" class="mt-3 bg-dental-gold hover:bg-dental-gold-light text-black text-center font-bold px-6 py-4 rounded-full text-xs uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20">
+    BOOK CONSULTATION
+  </a>
+</nav>
 </header>
 <main>
 <section class="relative min-h-[80vh] flex items-center pt-20 overflow-hidden" data-purpose="about-hero">
@@ -81,7 +106,7 @@
 <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12 w-full">
 <div class="z-10 py-12 lg:py-0">
 <span class="text-dental-gold text-[10px] font-bold tracking-[0.3em] uppercase mb-6 block">Meet Your Doctor</span>
-<h1 class="heading-serif text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
+<h1 class="heading-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
             Dr. Mohand <span class="text-dental-gold">Helail</span>
 </h1>
 <p class="arabic-text text-dental-text-gray text-sm max-w-md mb-8 leading-relaxed" style="font-size: 1.05rem; line-height: 1.9;">د. مهند هليل، طبيب أسنان يجمع بين الدقة العلمية واللمسة الفنية، يكرّس خبرته لتصميم ابتسامات استثنائية تعيد التوازن بين الجمال والوظيفة.</p>
@@ -109,41 +134,41 @@
 </div>
 </div>
 </section>
-<section class="bg-dental-deep-blue py-24" data-purpose="about-bio">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<section class="bg-dental-deep-blue py-16 md:py-24" data-purpose="about-bio">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 <div>
-<h2 class="heading-serif text-4xl font-bold mb-4">A passion for precision dentistry</h2>
+<h2 class="heading-serif text-3xl sm:text-4xl font-bold mb-4">A passion for precision dentistry</h2>
 <p class="arabic-text text-dental-text-gray text-sm mb-6 leading-relaxed" style="line-height: 2;">د. مهند هليل متخصص في جراحة الفم والأسنان، حاصل على درجة البكالوريوس في طب وجراحة الأسنان من جامعة بدر (BUC)، ويمتلك خبرة تمتد لأكثر من 5 سنوات في تقديم أعلى مستويات الرعاية السنية للمرضى.</p>
 <p class="arabic-text text-dental-text-gray text-sm leading-relaxed" style="line-height: 2;">يعتقد د. مهند أن كل ابتسامة قصة تستحق الاهتمام بأدق تفاصيلها. لذلك يجمع في عمله بين التشخيص الدقيق، والتخطيط الفني، والمتابعة المستمرة لضمان راحة المريض ورضاه على المدى الطويل.</p>
 </div>
 <div class="grid grid-cols-2 gap-6">
-<div class="bg-dental-dark rounded-xl border border-white/5 p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
-<p class="heading-serif text-4xl font-bold text-dental-gold mb-2">5+</p>
+<div class="bg-dental-dark rounded-xl border border-white/5 p-6 md:p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
+<p class="heading-serif text-3xl sm:text-4xl font-bold text-dental-gold mb-2">5+</p>
 <p class="text-[10px] uppercase tracking-widest text-dental-text-gray">سنوات خبرة</p>
 </div>
-<div class="bg-dental-dark rounded-xl border border-white/5 p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
-<p class="heading-serif text-4xl font-bold text-dental-gold mb-2">100+</p>
+<div class="bg-dental-dark rounded-xl border border-white/5 p-6 md:p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
+<p class="heading-serif text-3xl sm:text-4xl font-bold text-dental-gold mb-2">100+</p>
 <p class="text-[10px] uppercase tracking-widest text-dental-text-gray">حالة ناجحة</p>
 </div>
-<div class="bg-dental-dark rounded-xl border border-white/5 p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
-<p class="heading-serif text-4xl font-bold text-dental-gold mb-2">100%</p>
+<div class="bg-dental-dark rounded-xl border border-white/5 p-6 md:p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
+<p class="heading-serif text-3xl sm:text-4xl font-bold text-dental-gold mb-2">100%</p>
 <p class="text-[10px] uppercase tracking-widest text-dental-text-gray">رضا المرضى</p>
 </div>
-<div class="bg-dental-dark rounded-xl border border-white/5 p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
-<p class="heading-serif text-4xl font-bold text-dental-gold mb-2">BUC</p>
+<div class="bg-dental-dark rounded-xl border border-white/5 p-6 md:p-8 text-center hover:border-dental-gold/30 transition-all duration-500">
+<p class="heading-serif text-3xl sm:text-4xl font-bold text-dental-gold mb-2">BUC</p>
 <p class="text-[10px] uppercase tracking-widest text-dental-text-gray">جامعة بدر</p>
 </div>
 </div>
 </div>
 </section>
-<section class="bg-dental-dark py-24" data-purpose="credentials">
+<section class="bg-dental-dark py-16 md:py-24" data-purpose="credentials">
 <div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-16">
-<h2 class="heading-serif text-3xl font-bold mb-4">Credentials &amp; Expertise</h2>
+<div class="text-center mb-10 md:mb-16">
+<h2 class="heading-serif text-2xl sm:text-3xl font-bold mb-4">Credentials &amp; Expertise</h2>
 <p class="arabic-text text-dental-text-gray text-sm" style="line-height: 2;">مؤهلات علمية وخبرات عملية في أرقى مجالات طب الأسنان</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-8 hover:border-dental-gold/30 transition-all duration-500">
+<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-6 md:p-8 hover:border-dental-gold/30 transition-all duration-500">
 <div class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center mb-6">
 <span class="text-dental-gold text-lg">✦</span>
 </div>
@@ -154,7 +179,7 @@
 <li class="flex gap-3"><span class="text-dental-gold">•</span>خبرة سريرية تمتد لأكثر من 5 سنوات</li>
 </ul>
 </div>
-<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-8 hover:border-dental-gold/30 transition-all duration-500">
+<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-6 md:p-8 hover:border-dental-gold/30 transition-all duration-500">
 <div class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center mb-6">
 <span class="text-dental-gold text-lg">✦</span>
 </div>
@@ -165,7 +190,7 @@
 <li class="flex gap-3"><span class="text-dental-gold">•</span>زراعة الأسنان والتركيبات</li>
 </ul>
 </div>
-<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-8 hover:border-dental-gold/30 transition-all duration-500">
+<div class="bg-dental-deep-blue rounded-xl border border-white/5 p-6 md:p-8 hover:border-dental-gold/30 transition-all duration-500">
 <div class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center mb-6">
 <span class="text-dental-gold text-lg">✦</span>
 </div>
@@ -179,16 +204,16 @@
 </div>
 </div>
 </section>
-<section class="bg-dental-deep-blue py-24" data-purpose="philosophy">
+<section class="bg-dental-deep-blue py-16 md:py-24" data-purpose="philosophy">
 <div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 <div class="order-2 lg:order-1">
 <div class="aspect-[4/3] rounded-2xl overflow-hidden border border-white/5 bg-dental-dark">
 <img alt="Our philosophy" class="w-full h-full object-cover" src="Photos/Our philosophy.jpg">
 </div>
 </div>
 <div class="order-1 lg:order-2">
-<h2 class="heading-serif text-4xl font-bold mb-6">Our philosophy</h2>
+<h2 class="heading-serif text-3xl sm:text-4xl font-bold mb-6">Our philosophy</h2>
 <div class="space-y-6">
 <div class="flex gap-5">
 <div class="w-10 h-10 rounded-full border border-dental-gold/30 flex items-center justify-center flex-shrink-0"><span class="text-dental-gold text-sm">01</span></div>
@@ -216,9 +241,9 @@
 </div>
 </div>
 </section>
-<section class="bg-dental-dark py-24 text-center" data-purpose="about-cta">
+<section class="bg-dental-dark py-16 md:py-24 text-center" data-purpose="about-cta">
 <div class="max-w-3xl mx-auto px-6">
-<h2 class="heading-serif text-4xl font-bold mb-6">Ready to meet Dr. Mohand?</h2>
+<h2 class="heading-serif text-3xl sm:text-4xl font-bold mb-6">Ready to meet Dr. Mohand?</h2>
 <p class="arabic-text text-dental-text-gray text-sm mb-10 leading-relaxed" style="line-height: 2;">احجز استشارتك الخاصة اليوم ودعنا نرسم ابتسامة تعبّر عنك بثقة.</p>
 <a href="index.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black font-bold px-12 py-4 rounded-full transition-all text-sm uppercase tracking-widest shadow-xl shadow-dental-gold/10 inline-block">
           Book Your Consultation
@@ -255,4 +280,21 @@
 </div>
 </div>
 </footer>
+<script>
+(function () {
+  var toggle = document.getElementById('mobile-menu-toggle');
+  var menu = document.getElementById('mobile-menu');
+  if (!toggle || !menu) return;
+  function setOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.querySelectorAll('.menu-icon-open').forEach(function (icon) { icon.classList.toggle('hidden', open); });
+    toggle.querySelectorAll('.menu-icon-close').forEach(function (icon) { icon.classList.toggle('hidden', !open); });
+    document.body.classList.toggle('overflow-hidden', open);
+  }
+  toggle.addEventListener('click', function () { setOpen(menu.classList.contains('hidden')); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
+})();
+</script>
 </body></html>
