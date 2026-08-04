@@ -1,0 +1,402 @@
+<!DOCTYPE html><html dir="rtl" lang="ar" class="antialiased"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Services - Dr. Mohand Helail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Noto+Kufi+Arabic:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'luxury-dark': '#0a0d14',
+            'luxury-card': '#11151f',
+            'gold-accent': '#d4af37',
+            'gold-light': '#e5c05e',
+            'dental-dark': '#0a0e14',
+            'dental-deep-blue': '#121926',
+            'dental-gold': '#d4af37',
+            'dental-gold-light': '#e5c05b',
+            'dental-text-gray': '#94a3b8',
+          },
+          fontFamily: {
+            'serif': ['"Playfair Display"', 'serif'],
+            'sans': ['"Noto Kufi Arabic"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    html {
+      scroll-behavior: smooth;
+    }
+    .heading-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    body {
+      background-color: #0a0d14;
+      color: #ffffff;
+      font-family: 'Noto Kufi Arabic', sans-serif;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .text-gold {
+      color: #d4af37;
+    }
+    .border-gold {
+      border-color: #d4af37;
+    }
+  </style>
+<style data-purpose="layout-styling">
+    .service-card {
+      background-color: #11151f;
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .step-circle {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #11151f;
+      border: 1px solid #2d313a;
+      font-family: 'Playfair Display', serif;
+    }
+    .step-circle.active {
+      background: #d4af37;
+      color: #000;
+      border-color: #d4af37;
+    }
+    .faq-item {
+      background-color: #11151f;
+      border: 1px solid #1e2430;
+    }
+  </style>
+</head>
+<body class="antialiased">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 w-full z-50 bg-dental-dark/80 backdrop-blur-md border-b border-white/5" dir="ltr">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo Section -->
+<a href="Home.html" class="flex items-center gap-4" data-purpose="site-logo">
+  <div class="w-8 h-8 rounded-full border-2 border-dental-gold flex items-center justify-center flex-shrink-0">
+    <div class="w-4 h-4 bg-dental-gold rounded-full"></div>
+  </div>
+  <span class="heading-serif text-xl font-bold tracking-widest uppercase text-white">DR. MOHAND HELAIL</span>
+</a>
+
+<!-- Centered Navigation -->
+<nav class="hidden md:flex items-center gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Home.html">HOME</a>
+  <a class="text-dental-gold border-b-2 border-dental-gold pb-1" href="Services.html">SERVICES</a>
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="About.html">ABOUT</a>
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Portfolio.html">PORTFOLIO</a>
+</nav>
+
+<!-- CTA Button Section -->
+<div data-purpose="header-action">
+  <a href="Home.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
+    BOOK CONSULTATION
+  </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="pt-40 pb-20 text-center px-4">
+<span class="text-gold-accent text-xs tracking-[0.3em] uppercase mb-4 block" data-purpose="subtitle">Uncompromising Quality</span>
+<h1 class="text-5xl md:text-7xl font-serif mb-8">Our Services</h1>
+<div class="max-w-2xl mx-auto space-y-2 text-gray-400 font-light leading-relaxed">
+<p class="">حيث تلتقي الدقة السريرية بفن الابتسامة المثالية، نقدم</p>
+<p class="">مجموعة مختارة من إجراءات طب الأسنان المتميزة المصممة خصيصاً للمرضى الأكثر تميزاً.</p>
+</div>
+</main>
+<!-- END: HeroSection -->
+<!-- BEGIN: ServicesGrid -->
+<section class="max-w-7xl mx-auto px-6 pb-32" data-purpose="services-showcase">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Service 1: Operative Dentistry -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Operative Dentistry" class="w-full h-full object-cover" src="Photos/operative dentistry.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">✦</span>
+<h3 class="text-xl font-serif">Operative Dentistry</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">رعاية ترميمية تركز على الحشوات والتيجان وإصلاح الأسنان، مصممة للحفاظ على بنية السن الطبيعية مع ضمان الراحة والمظهر الجمالي.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• حشوات تجميلية</li>
+<li class="">• تيجان خزفية</li>
+<li class="">• ترميمات إنلاي / أونلاي</li>
+</ul>
+</div>
+</div>
+<!-- Service 2: Endodontics -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Endodontics" class="w-full h-full object-cover" src="Photos/Endodontics.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">🔬</span>
+<h3 class="text-xl font-serif">Endodontics</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">علاج جذور الأسنان لإنقاذ الأسنان المصابة بالتهاب أو تلف العصب، باستخدام تقنيات دقيقة تضمن التخلص من الألم والحفاظ على السن لأطول فترة ممكنة.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• علاج عصب الأسنان</li>
+<li class="">• إعادة علاج العصب</li>
+<li class="">• علاج الخراجات المرتبطة بالجذور</li>
+</ul>
+</div>
+</div>
+<!-- Service 3: Prosthodontics -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Prosthodontics" class="w-full h-full object-cover" src="Photos/Prosthodontics.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">▦</span>
+<h3 class="text-xl font-serif">Prosthodontics</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">استعادة الأسنان المفقودة أو التالفة من خلال التركيبات الثابتة والمتحركة التي تجمع بين الوظيفة المثالية والمظهر الطبيعي للابتسامة.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• تيجان الأسنان</li>
+<li class="">• الجسور الثابتة</li>
+<li class="">• الأطقم المتحركة والكاملة</li>
+</ul>
+</div>
+</div>
+<!-- Service 4: Oral Surgery -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Oral and Maxillofacial Surgery" class="w-full h-full object-cover" src="Photos/Oral and Maxillofacial Surgery.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">🛡</span>
+<h3 class="text-xl font-serif">Oral and Maxillofacial Surgery</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">تشخيص وعلاج الحالات الجراحية للفم والفكين، مع تقديم حلول آمنة ودقيقة لمختلف الإجراءات الجراحية المعقدة والبسيطة.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• خلع ضروس العقل</li>
+<li class="">• الجراحات الفموية</li>
+<li class="">• علاج أكياس والتهابات الفكين</li>
+</ul>
+</div>
+</div>
+<!-- Service 5: Orthodontics -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Orthodontics" class="w-full h-full object-cover" src="Photos/Orthodontics.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">✦</span>
+<h3 class="text-xl font-serif">Orthodontics</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">تصحيح اعوجاج الأسنان ومشاكل الإطباق للحصول على ابتسامة متناسقة وتحسين وظائف المضغ والنطق باستخدام أحدث تقنيات التقويم.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• التقويم المعدني</li>
+<li class="">• التقويم الشفاف</li>
+<li class="">• علاج تزاحم وفراغات الأسنان</li>
+</ul>
+</div>
+</div>
+<!-- Service 6: Pediatric Dentistry -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Pediatric Dentistry" class="w-full h-full object-cover" src="Photos/Pediatric Dentistry.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">🔬</span>
+<h3 class="text-xl font-serif">Pediatric Dentistry</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">رعاية متخصصة لأسنان الأطفال في بيئة مريحة وآمنة، مع التركيز على الوقاية والعلاج المبكر لبناء صحة فموية سليمة منذ الصغر.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• علاج تسوس الأطفال</li>
+<li class="">• الحشوات الوقائية</li>
+<li class="">• توعية ونظافة الأسنان</li>
+</ul>
+</div>
+</div>
+<!-- Service 7: Periodontology -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Periodontology" class="w-full h-full object-cover" src="Photos/Periodontology.jfif" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">▦</span>
+<h3 class="text-xl font-serif">Periodontology</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">تشخيص وعلاج أمراض اللثة والعظام الداعمة للأسنان للحفاظ على صحة الفم ومنع فقدان الأسنان وتحسين صحة اللثة على المدى الطويل.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• علاج نزيف اللثة</li>
+<li class="">• تنظيف عميق للثة</li>
+<li class="">• علاج انحسار اللثة</li>
+</ul>
+</div>
+</div>
+<!-- Service 8: Implants -->
+<div class="service-card p-6 flex flex-col md:flex-row gap-6">
+<div class="md:w-1/2">
+<img alt="Implants" class="w-full h-full object-cover" src="Photos/Implants.jpg" style="aspect-ratio: 4/3; object-fit: cover;"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="text-gold-accent">🛡</span>
+<h3 class="text-xl font-serif">Implants</h3>
+</div>
+<p class="text-gray-400 text-sm mb-6 leading-loose">حل دائم لتعويض الأسنان المفقودة باستخدام زراعة الأسنان، لاستعادة المظهر الطبيعي والقدرة على المضغ بثبات وراحة.</p>
+<ul class="text-gold-accent text-xs space-y-1">
+<li class="">• زراعة سن واحد</li>
+<li class="">• زراعة متعددة الأسنان</li>
+<li class="">• تعويض كامل للفك بالزرعات</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ServicesGrid -->
+<!-- BEGIN: PatientJourney -->
+<section class="bg-[#07090d] py-32 text-center" data-purpose="process-section">
+<div class="max-w-7xl mx-auto px-6">
+<span class="text-gold-accent text-[10px] tracking-[0.4em] uppercase mb-4 block">Your Path to Perfection</span>
+<h2 class="text-4xl font-serif mb-20">The Patient Journey</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden md:block absolute top-10 left-1/4 right-1/4 h-[1px] bg-white/5 z-0"></div>
+<!-- Step 1 -->
+<div class="flex flex-col items-center z-10">
+<div class="step-circle mb-8 text-white/40">01</div>
+<h3 class="text-lg font-bold mb-4">الاستشارة</h3>
+<p class="text-gray-500 text-xs leading-loose px-4">جلسة خاصة مع أطبائنا المتخصصين لمناقشة احتياجاتك وأهدافك العلاجية، مع إجراء فحص شامل وتحليل رقمي لابتسامتك لوضع أفضل خطة علاجية.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center z-10">
+<div class="step-circle mb-8 text-white/40">02</div>
+<div class="text-lg font-bold mb-4">خطة العلاج</div>
+<p class="text-gray-500 text-xs leading-loose px-4">نضع خطة علاجية مخصصة تناسب حالتك، تتضمن شرحاً واضحاً لجميع الإجراءات والنتائج المتوقعة لضمان تجربة علاجية دقيقة ومريحة.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center z-10">
+<div class="step-circle active mb-8">03</div>
+<h3 class="text-lg font-bold mb-4">التحول</h3>
+<p class="text-gray-500 text-xs leading-loose px-4">نبدأ تنفيذ خطة العلاج بأعلى معايير الجودة والعناية، لنمنحك ابتسامة صحية طبيعية، وأكثر ثقة.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PatientJourney -->
+<!-- BEGIN: FAQSection -->
+<section class="py-32" data-purpose="faq">
+<div class="max-w-3xl mx-auto px-6">
+<h2 class="text-4xl font-serif text-center mb-16">Common Enquiries</h2>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="faq-item rounded-lg overflow-hidden border border-white/10">
+  <button type="button" class="w-full p-5 flex justify-between items-center text-right cursor-pointer focus:outline-none bg-white/[0.02] hover:bg-white/[0.05] transition-colors" onclick="toggleFaq(this)">
+    <span class="text-sm font-bold text-white">كم تستغرق عملية تجميل الابتسامة؟</span>
+    <span class="arrow-icon text-gold-accent text-xs transform transition-transform duration-300 rotate-180">▼</span>
+  </button>
+  <div class="px-5 pb-5 text-xs text-gray-300 leading-relaxed border-t border-white/5 pt-3">
+    تستغرق عملية تجميل الابتسامة عادةً من جلسة واحدة إلى 3 جلسات خلال أسبوعين فقط، وذلك بحسب نوع الإجراء المطلوب كالفينير أو التبييض.
+  </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item rounded-lg overflow-hidden border border-white/10">
+  <button type="button" class="w-full p-5 flex justify-between items-center text-right cursor-pointer focus:outline-none bg-white/[0.02] hover:bg-white/[0.05] transition-colors" onclick="toggleFaq(this)">
+    <span class="text-sm font-bold text-white">هل العلاج مؤلم؟</span>
+    <span class="arrow-icon text-gold-accent text-xs transform transition-transform duration-300">▼</span>
+  </button>
+  <div class="hidden px-5 pb-5 text-xs text-gray-300 leading-relaxed border-t border-white/5 pt-3">
+    لا، نحن نستخدم أحدث تقنيات التخدير الموضعي والأدوات الدقيقة غير الجراحية لضمان تجربة علاجية خالية تماماً من الألم خلال كافة المراحل.
+  </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item rounded-lg overflow-hidden border border-white/10">
+  <button type="button" class="w-full p-5 flex justify-between items-center text-right cursor-pointer focus:outline-none bg-white/[0.02] hover:bg-white/[0.05] transition-colors" onclick="toggleFaq(this)">
+    <span class="text-sm font-bold text-white">هل توفرون خطط دفع مرنة؟</span>
+    <span class="arrow-icon text-gold-accent text-xs transform transition-transform duration-300">▼</span>
+  </button>
+  <div class="hidden px-5 pb-5 text-xs text-gray-300 leading-relaxed border-t border-white/5 pt-3">
+    نعم، نوفر خيارات وخطط سداد مرنة تناسب جميع المرضى لمساعدتك على إنجاز علاجك وتجميل أسنانك بكل سهولة وراحة.
+  </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FAQSection -->
+<!-- BEGIN: CTASection -->
+<section class="py-32 text-center" data-purpose="final-cta">
+<h2 class="text-5xl md:text-6xl font-serif mb-12">Ready for your new smile?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<a class="bg-gold-accent text-black font-bold py-4 px-10 text-xs uppercase tracking-widest hover:bg-gold-light transition-colors" href="Home.html#booking-section">
+        Book a Consultation
+      </a>
+<a class="border border-white/20 py-4 px-10 text-xs uppercase tracking-widest hover:bg-white/5 transition-colors" href="Portfolio.html">
+        View Case Studies
+      </a>
+</div>
+</section>
+<!-- END: CTASection -->
+<!-- BEGIN: Footer -->
+<footer class="bg-dental-dark border-t border-white/5 py-16">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full border border-dental-gold flex items-center justify-center">
+<div class="w-3 h-3 bg-dental-gold rounded-full"></div>
+</div>
+<span class="heading-serif text-lg font-bold tracking-tight text-white uppercase">Dr. Mohand Helail</span>
+</div>
+<div class="flex items-center space-x-4">
+  <a href="#" class="text-white hover:text-[#d4af37] transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+    </svg>
+  </a>
+  <a href="#" class="text-white hover:text-[#d4af37] transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path>
+    </svg>
+  </a>
+</div>
+<div class="text-dental-text-gray text-[10px] uppercase tracking-widest">
+  © 2026 Dr. Mohand Helail. All Rights Reserved.
+</div>
+<div class="flex gap-6 text-dental-text-gray text-xs">
+<a class="hover:text-dental-gold transition-colors" href="#">Privacy</a>
+<a class="hover:text-dental-gold transition-colors" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const answer = item.querySelector('div:last-child');
+  const icon = btn.querySelector('.arrow-icon');
+  
+  if (answer.classList.contains('hidden')) {
+    answer.classList.remove('hidden');
+    icon.classList.add('rotate-180');
+  } else {
+    answer.classList.add('hidden');
+    icon.classList.remove('rotate-180');
+  }
+}
+</script>
+</body></html>

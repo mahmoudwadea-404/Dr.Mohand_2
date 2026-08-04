@@ -1,0 +1,292 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Portfolio | LUXE DENTAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                'dental-dark': '#0a0e14',
+                'dental-deep-blue': '#121926',
+                'dental-gold': '#d4af37',
+                'dental-gold-light': '#e5c05b',
+                'dental-text-gray': '#94a3b8',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['Inter', 'sans-serif'],
+              },
+              spacing: {
+                "section-gap": "120px",
+                "unit": "8px",
+                "container-max": "1280px",
+                "gutter": "32px",
+                "margin-mobile": "24px",
+                "margin-desktop": "64px"
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        html { scroll-behavior: smooth; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .heading-serif { font-family: 'Playfair Display', serif; }
+        .body-sans { font-family: 'Inter', sans-serif; }
+        
+        .gold-underline {
+            position: relative;
+        }
+        .gold-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #d4af37;
+            transition: width 0.3s ease;
+        }
+        .gold-underline:hover::after {
+            width: 100%;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0a0e14;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #121926;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+</head>
+<body class="bg-dental-dark text-white body-sans selection:bg-dental-gold selection:text-black transition-all duration-1000 opacity-100 translate-y-0">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 w-full z-50 bg-dental-dark/80 backdrop-blur-md border-b border-white/5" dir="ltr">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Logo Section -->
+<a href="Home.html" class="flex items-center gap-4" data-purpose="site-logo">
+  <div class="w-8 h-8 rounded-full border-2 border-dental-gold flex items-center justify-center flex-shrink-0">
+    <div class="w-4 h-4 bg-dental-gold rounded-full"></div>
+  </div>
+  <span class="heading-serif text-xl font-bold tracking-widest uppercase text-white">DR. MOHAND HELAIL</span>
+</a>
+
+<!-- Centered Navigation -->
+<nav class="hidden md:flex items-center gap-12 text-xs font-bold tracking-widest uppercase heading-serif" data-purpose="main-nav">
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Home.html">HOME</a>
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="Services.html">SERVICES</a>
+  <a class="text-gray-300 hover:text-dental-gold transition-colors" href="About.html">ABOUT</a>
+  <a class="text-dental-gold border-b-2 border-dental-gold pb-1" href="Portfolio.html">PORTFOLIO</a>
+</nav>
+
+<!-- CTA Button Section -->
+<div data-purpose="header-action">
+  <a href="Home.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg shadow-dental-gold/20 inline-block">
+    BOOK CONSULTATION
+  </a>
+</div>
+</div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-margin-desktop py-16 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-4xl mx-auto">
+<h1 class="heading-serif text-6xl lg:text-7xl font-bold text-dental-gold mb-6 tracking-tight">Portfolio</h1>
+<p class="body-sans text-dental-text-gray text-sm max-w-2xl mx-auto uppercase tracking-[0.2em] leading-relaxed">استعراض لأبرز الحالات والنتائج التجميلية والعلاجية</p>
+</div>
+</section>
+<!-- Portfolio Grid -->
+<section class="px-margin-desktop py-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-24" dir="rtl">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-6 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="إعادة تأهيل الابتسامة بالكامل" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/إعادة تأهيل الابتسامة بالكامل.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">تجميل الأسنان</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الابتسامة بالكامل</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم تعويض الأسنان المفقودة وإعادة تأهيل الأسنان المتضررة من خلال خطة علاجية متكاملة، لاستعادة الابتسامة الطبيعية وتحسين وظيفة المضغ والثقة بالنفس.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-6 md:mt-24 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="إعادة تأهيل الفك العلوي" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/إعادة تأهيل الفك العلوي.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">ترميم الأسنان</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة تأهيل الفك العلوي</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم استبدال الأسنان المفقودة والمتضررة بتركيبات ثابتة مصممة بدقة، مما أعاد للمريض القدرة على المضغ مع الحصول على مظهر طبيعي ومتناسق.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-6 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="ترميم تجميلي للأسنان الخلفية" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/ترميم تجميلي للأسنان الخلفية.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">تقويم الأسنان</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميم تجميلي للأسنان الخلفية</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed">تم ترميم السن باستخدام حشوة تجميلية عالية الجودة بعد إزالة الجزء المتضرر، مع الحفاظ على أكبر قدر ممكن من نسيج السن الطبيعي.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group flex flex-col gap-6 md:mt-24 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="تجميل الأسنان الأمامية" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/تجميل الأسنان الأمامية.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">فن الخزف</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">تجميل الأسنان الأمامية</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1048" data-end="1158" class="PDq2pG_selectionAnchorContainer">تحسين لون وشكل الأسنان الأمامية للحصول على ابتسامة أكثر إشراقًا وتناسقًا مع الحفاظ على المظهر الطبيعي للأسنان.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
+<p data-start="1160" data-end="1176"></p></p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col gap-6 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="إعادة بناء الأسنان الأمامية" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/إعادة بناء الأسنان الأمامية.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">زراعة الأسنان</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">إعادة بناء الأسنان الأمامية</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1294" data-end="1424" class="PDq2pG_selectionAnchorContainer">إعادة ترميم الأسنان الأمامية المتآكلة أو المكسورة باستخدام مواد تجميلية متقدمة، لاستعادة الشكل الطبيعي والانسجام الكامل للابتسامة.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
+<p data-start="1426" data-end="1442"></p></p>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col gap-6 md:mt-24 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative aspect-[4/3] overflow-hidden bg-dental-deep-blue rounded-xl border border-white/5 group-hover:border-dental-gold/30 transition-all duration-500">
+<img alt="ترميمات تجميلية متقدمة" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" src="Photos/ترميمات تجميلية متقدمة.jpeg">
+<div class="absolute bottom-4 right-4 bg-dental-dark/80 backdrop-blur px-4 py-2 border-r border-dental-gold">
+<span class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">COSMETIC DENTISTRY</span>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<h3 class="heading-serif text-2xl font-bold text-white group-hover:text-dental-gold transition-colors">ترميمات تجميلية متقدمة</h3>
+<p class="body-sans text-sm text-dental-text-gray max-w-lg leading-relaxed"><p data-start="1556" data-end="1684" class="PDq2pG_selectionAnchorContainer">مجموعة من الحالات التي توضح نتائج ترميم الأسنان باستخدام أحدث المواد والتقنيات، مع التركيز على القوة، والمتانة، والمظهر الطبيعي.<span aria-hidden="true" class="PDq2pG_selectionAnchor"></span></p>
+<p data-start="1686" data-end="1702"></p></p>
+</div>
+</div>
+</div>
+</section>
+<!-- Patient Experiences -->
+<section class="bg-dental-deep-blue py-section-gap px-margin-desktop mt-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
+<div class="lg:col-span-1">
+<h2 class="heading-serif text-4xl font-bold text-white mb-4">Patient Experiences</h2>
+<p class="body-sans text-sm text-dental-text-gray leading-relaxed">آراء عملائنا وقصص نجاحهم مع عيادتنا</p>
+<div class="mt-8 flex gap-4">
+<button class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center text-dental-gold hover:bg-dental-gold hover:text-black transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-dental-gold/30 flex items-center justify-center text-dental-gold hover:bg-dental-gold hover:text-black transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-dental-gold text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span>
+<p class="body-sans text-lg text-white italic leading-relaxed" dir="rtl">"لقد غيرت هذه العيادة حياتي بالكامل. أصبحت الآن أبتسم بكل ثقة."</p>
+<div dir="rtl">
+<p class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">أحمد منصور</p>
+<p class="text-dental-text-gray text-xs mt-1">مريض تجميل أسنان</p>
+</div>
+</div>
+<div class="p-10 bg-dental-dark rounded-xl border border-white/5 flex flex-col gap-6 hover:shadow-2xl hover:shadow-dental-gold/5 transition-all duration-1000 opacity-100 translate-y-0">
+<span class="material-symbols-outlined text-dental-gold text-4xl" style="font-variation-settings: &quot;FILL&quot; 1;">format_quote</span>
+<p class="body-sans text-lg text-white italic leading-relaxed" dir="rtl">"الاحترافية والدقة في العمل لا تضاهى. أنصح الجميع بزيارة د. مهند."</p>
+<div dir="rtl">
+<p class="text-[10px] font-bold text-dental-gold uppercase tracking-widest">سارة خالد</p>
+<p class="text-dental-text-gray text-xs mt-1">مريضة زراعة أسنان</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-desktop py-section-gap relative overflow-hidden text-center bg-dental-dark transition-all duration-1000 opacity-100 translate-y-0">
+<div class="relative z-10 max-w-3xl mx-auto">
+<h2 class="heading-serif text-5xl font-bold text-white mb-8">Ready for your transformation?</h2>
+<p class="body-sans text-sm text-dental-text-gray mb-12 leading-relaxed">اكتشف الفرق الذي يمكن أن تحدثه الخبرة واللمسة الفنية في ابتسامتك. ابدأ رحلتك الآن نحو تحول جذري يعيد لك الثقة والإشراق.</p>
+<a href="Home.html#booking-section" class="bg-dental-gold hover:bg-dental-gold-light text-black font-bold px-12 py-4 rounded-full transition-all text-sm uppercase tracking-widest shadow-xl shadow-dental-gold/10 inline-block">
+            Book Your Consultation
+        </a>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component styling) -->
+<footer class="bg-dental-dark border-t border-white/5 py-16">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full border border-dental-gold flex items-center justify-center">
+<div class="w-3 h-3 bg-dental-gold rounded-full"></div>
+</div>
+<span class="heading-serif text-lg font-bold tracking-tight text-white uppercase">Dr. Mohand Helail</span>
+</div>
+<div class="flex items-center space-x-4">
+  <a href="#" class="text-white hover:text-[#d4af37] transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+    </svg>
+  </a>
+  <a href="#" class="text-white hover:text-[#d4af37] transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path>
+    </svg>
+  </a>
+</div>
+<div class="text-dental-text-gray text-[10px] uppercase tracking-widest">
+  © 2026 Dr. Mohand Helail. All Rights Reserved.
+</div>
+<div class="flex gap-6 text-dental-text-gray text-xs">
+<a class="hover:text-dental-gold transition-colors" href="#">Privacy</a>
+<a class="hover:text-dental-gold transition-colors" href="#">Terms</a>
+</div>
+</div>
+</footer>
+<script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.group, .bg-dental-dark').forEach(el => {
+        if (!el.closest('header') && !el.closest('footer')) {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-1000');
+            observer.observe(el);
+        }
+    });
+</script>
+
+
+</body></html>
