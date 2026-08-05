@@ -39,6 +39,51 @@
       text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
     }
   </style>
+<style data-purpose="portfolio-carousel">
+    .portfolio-carousel {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      margin-inline: -1.5rem;
+      padding-inline: 1.5rem;
+    }
+    .portfolio-carousel::-webkit-scrollbar {
+      display: none;
+    }
+    .portfolio-carousel > * {
+      flex: 0 0 85%;
+      max-width: 85%;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    @media (min-width: 768px) {
+      .portfolio-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+        overflow: visible;
+        scroll-snap-type: none;
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+      .portfolio-carousel > * {
+        flex: none;
+        max-width: none;
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
+      }
+    }
+    @media (min-width: 1024px) {
+      .portfolio-carousel {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+  </style>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head>
 <body class="bg-dental-dark text-white body-sans selection:bg-dental-gold selection:text-black">
 <!-- BEGIN: MainHeader -->
@@ -160,7 +205,7 @@
     View All Cases
   </a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" dir="rtl">
+<div class="portfolio-carousel" dir="rtl">
 <!-- Card 1 -->
 <a href="Portfolio.html" class="bg-dental-deep-blue rounded-xl overflow-hidden group hover:shadow-2xl hover:shadow-dental-gold/10 transition-all duration-500 flex flex-col border border-white/5 hover:border-dental-gold/30">
 <div class="h-56 overflow-hidden relative">
